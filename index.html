@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>curved images</title>
+        <script src = "https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id = "a1" src = "mozvr.png">
+                <img id = "a2" src = "ui-1.png">
+                <img id = "a3" src = "ui-2.png">
+                <img id = "a4" src = "ui-3.png">
+            </a-assets>
+            <a-curvedimage src = "#a4" radius = "6" theta-length = "180" scale = "1.2 1.2 1.2" height = "9"></a-curvedimage>
+            <a-curvedimage src = "#a1" radius = "4" theta-length = "90" scale = "1 1 1" height = "6" position = " 4 10 5"></a-curvedimage>
+            <a-curvedimage src = "#a2" radius = "5" theta-length = "120" scale = "0.9 0.9 0.9" height = "5" position = "-2 3 16"></a-curvedimage>
+        </a-scene>
+    </body>
+</html>
